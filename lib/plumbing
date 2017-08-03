@@ -1,0 +1,9 @@
+# to update:
+# cat $HOME/lib/plumbing $PLAN9/plumb/initial.plumbing | 9p write plumb/rules
+
+type is text
+data matches '[a-zA-Z¡-￿0-9_\-./]+'
+data matches '([a-zA-Z¡-￿0-9_\-./]+)\.(ps|PS|eps|EPS|pdf|PDF|dvi|DVI)'
+arg isfile	$0
+plumb to postscript
+plumb start open $file

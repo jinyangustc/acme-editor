@@ -69,8 +69,8 @@ acme
 [The Acme User Interface for Programmers](http://acme.cat-v.org) lists various
 resources abou the acme editor.
 
-Russ Cox (rsc) gives a nice video introduction [A Tour of
-Acme](https://research.swtch.com/acme) about the acme editor.
+Russ Cox (rsc) gives a nice video introduction in [A Tour of
+Acme](https://research.swtch.com/acme).
 
 [Ruben Berenguel](http://www.mostlymaths.net/p/contact.html) posted several
 blogs about acme.
