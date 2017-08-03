@@ -47,7 +47,7 @@ Then you should find a new entry in the `System Preferences`:
 
 ### 4. Launch Acme
 
-Now you should can run Acme from the command line:
+Now you should be able to run Acme from the command line:
 ```bash
 acme
 ```
