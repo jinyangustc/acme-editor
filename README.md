@@ -7,7 +7,7 @@
 I currently use a Macbook Air (13-inch, Early 2015) and the system version is
 macOS Sierra 10.12.5.
 
-### 1. Grap plan9port source code from github.
+### 1. Grab plan9port source code from github.
 
 ``` bash
 git clone https://github.com/9fans/plan9port.git /usr/local/plan9
@@ -54,4 +54,39 @@ acme
 
 # Notes
 
+## Configuration
+
+## Editing
+
+## Plumber
+
+## Work with Unix Tools
+
 # Reference
+
+## Articles and Manuals
+
+[The Acme User Interface for Programmers](http://acme.cat-v.org) lists various
+resources abou the acme editor.
+
+Russ Cox (rsc) gives a nice video introduction [A Tour of
+Acme](https://research.swtch.com/acme) about the acme editor.
+
+[Ruben Berenguel](http://www.mostlymaths.net/p/contact.html) posted several
+blogs about acme.
+
+[Brian Zwahr](http://www.mostlymaths.net/p/contact.html) shared his joys and
+pains during a 3-months experience with acme in a series of blogs (9 episodes),
+from entry to ~~give up~~ master :).
+
+[Jesper Louis
+Andersen](http://jlouisramblings.blogspot.sg/2013/04/acme-as-editor_20.html)
+used acme for a long time (months at least) and talked about it in several
+posts.
+
+
+## Existing Configurations
+
+- [Ev Bogdanov's config](https://github.com/evbogdanov/acme)
+- [Michael Auchter's config.](https://github.com/auchter/dotfiles/tree/master/plan9)
+- [Jesper Louis Andersen's config](https://github.com/jlouis/plan9-setup)
