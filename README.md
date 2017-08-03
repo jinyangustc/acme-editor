@@ -29,7 +29,7 @@ And you wait. After the compile is finished, there will be an instruction on the
 screen to show how to config environment variables. I add the following to the
 `.profile`:
 
-,,,
+```
 export BROWSER='safari'
 PLAN9=/usr/local/plan9
 PATH=$PATH:$PLAN9/bin
@@ -52,7 +52,7 @@ export \
     home\
     prompt\
     user
-,,,
+```
 
 ### 3. Install FUSE
 
