@@ -34,17 +34,13 @@ export BROWSER='safari'
 PLAN9=/usr/local/plan9
 PATH=$PATH:$PLAN9/bin
 
-# Plumb files instead of starting new editor.
 EDITOR=E
 unset FCEDIT VISUAL
 
-# Get rid of backspace characters in Unix man output.
 PAGER=nobs
 
-# Default font for Plan 9 programs.
 font=$PLAN9/font/lucsans/unicode.10.font
 
-# Equivalent variables for rc(1).
 home=$HOME
 prompt="$H=;          "
 user=$USER
@@ -66,7 +62,7 @@ homebrew:
 ```bash
 brew cask install osxfuse
 ```
-Then you should find a new entry in the `System Prefereces`:
+Then you should find a new entry in the `System Preferences`:
 ![FUSE](/images/osxfuse.png)
 
 ### 4. Launch Acme
