@@ -21,7 +21,7 @@ brew install plan9port
 ### 2. Compile and install
 
 plan9port provides a script to compile and install binaries.
-``` bash
+```bash
 cd /usr/local/plan9
 ./INSTALL
 ```
@@ -29,7 +29,7 @@ And you wait. After the compile is finished, there will be an instruction on the
 screen to show how to config environment variables. I add the following to the
 `.profile`:
 
-,,, bash
+,,,profile
 export BROWSER='safari'
 PLAN9=/usr/local/plan9
 PATH=$PATH:$PLAN9/bin
@@ -63,7 +63,7 @@ export \
 The 9p protocol needs FUSE to regeister stuff into the *nix file system. You can
 get the `.pkg` from the [osxfuse](https://osxfuse.github.io) homepage or via
 homebrew:
-``` bash
+```bash
 brew cask install osxfuse
 ```
 Then you should find a new entry in the `System Prefereces`:
@@ -72,7 +72,7 @@ Then you should find a new entry in the `System Prefereces`:
 ### 4. Launch Acme
 
 Now you should can run Acme from the command line:
-``` bash
+```bash
 acme
 ```
 
