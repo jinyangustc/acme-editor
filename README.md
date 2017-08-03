@@ -30,28 +30,8 @@ screen to show how to config environment variables. I add the following to the
 `.profile`:
 
 ```
-export BROWSER='safari'
 PLAN9=/usr/local/plan9
 PATH=$PATH:$PLAN9/bin
-
-EDITOR=E
-unset FCEDIT VISUAL
-
-PAGER=nobs
-
-font=$PLAN9/font/lucsans/unicode.10.font
-
-home=$HOME
-prompt="$H=;          "
-user=$USER
-
-export \
-    BROWSER\
-    PLAN9\
-    font\
-    home\
-    prompt\
-    user
 ```
 
 ### 3. Install FUSE
