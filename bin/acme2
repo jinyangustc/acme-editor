@@ -1,6 +1,14 @@
 #!/usr/bin/env sh
 
-# if plumber is not started, start it.
+##################################################################
+# This script does
+#     1. Check if plumber is running and launch it if it is not.
+#     2. Check if fontsrv is running and launch it if it is not.
+#     3. Set font used by acme.
+#     4. Start acme.
+##################################################################
+
+# start plumber
 if ! pgrep -x "plumber" > /dev/null
 then
     plumber
@@ -8,11 +16,14 @@ then
     cat $HOME/git/plan9/lib/plumbing $PLAN9/plumb/initial.plumbing | 9p write plumb/rules > /dev/null
 fi
 
-# if fontsrv is not started, start it.
+# start fontsrv
 if ! pgrep -x "fontsrv" > /dev/null
 then
     fontsrv&
 fi
 
+# set font used by acme
 ACMEFONT='/mnt/font/Inziu-Iosevka-CL-Regular/16a/font'
+
+# start acme
 acme -a -f $ACMEFONT &
