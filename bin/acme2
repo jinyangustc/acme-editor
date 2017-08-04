@@ -23,7 +23,7 @@ then
 fi
 
 # set font used by acme
-ACMEFONT='/mnt/font/Inziu-Iosevka-CL-Regular/16a/font'
+ACMEFONT='/mnt/font/Inziu-Iosevka-CL-Regular/14a/font'
 
 # start acme
 acme -a -f $ACMEFONT &
