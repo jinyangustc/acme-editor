@@ -8,6 +8,10 @@ Refer to: [wiki/install.md](/wiki/install.md)
 
 # Reference
 
+## Community
+
+[9p wiki](https://9p.io/wiki/plan9/community/index.html)
+
 ## Articles and Manuals
 
 [The Acme User Interface for Programmers](http://acme.cat-v.org) lists various
