@@ -2,9 +2,11 @@
 
 I'll add something here to introduce plan9 and acme.
 
-# Install
+# Notes and wiki
 
-Refer to: [wiki/install.md](/wiki/install.md)
+- Installation: [wiki/install.md](/wiki/install.md)
+- sam editor/language: [wiki/sam.md](/wiki/sam.md)
+
 
 # Reference
 
