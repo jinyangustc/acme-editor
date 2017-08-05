@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+currentpath=`pwd`
+ln -sf $currentpath /tmp/acme.git.log
+git log
