@@ -1,9 +1,16 @@
 # to update:
 # cat $HOME/lib/plumbing $PLAN9/plumb/initial.plumbing | 9p write plumb/rules
 
+# open pdf with `open`
 type is text
 data matches '[a-zA-Z¡-￿0-9_\-./]+'
 data matches '([a-zA-Z¡-￿0-9_\-./]+)\.(ps|PS|eps|EPS|pdf|PDF|dvi|DVI)'
 arg isfile	$0
 plumb to postscript
 plumb start open $file
+
+# show git log
+type is text
+data matches 'commit ([a-z0-9]*)'
+plumb start bash -c 'cd /tmp/acme.git.log; git show $1 >> /mnt/acme/new/body'
+
