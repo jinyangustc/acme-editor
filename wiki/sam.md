@@ -7,10 +7,10 @@ Nomenclature: **sam** keeps a copy of the text it is editing which is called a
 
 ## Text
 
-- 'a': add
-- 'c': replace
-- 'p': print
-- 'u': undo
+- `a`: add
+- `c`: replace
+- `p`: print
+- `u`: undo
 
 ## Addresses
 
@@ -20,7 +20,7 @@ define the beginning and the end of a region.
 Addresses may be combined with a comma:
 - `13,15`: selects line 13 through line 1
 - `0,13`: selects from the beginning of the file to line 13
-- `.,$': selects from the current text to the end of the file
+- `.,$`: selects from the current text to the end of the file
 - `0,$`: selects the whole file
 
 Theses all all *absolute* addresses. There are also relative addresses.
@@ -31,7 +31,7 @@ Theses all all *absolute* addresses. There are also relative addresses.
 - `0/Emacs/,$-/Emacs/`: selects the text from the first to last **Emacs**, inclusive.
 - `/Emacs/+/Emacs`: selects the second **Emacs** followin dot.
 - `-2`: selects the second previous line
-- '+5': selects the fifth following line
+- `+5`: selects the fifth following line
 
 The `+-` idiom: selects the line before the line after the end of dot, that is ,
 the complete line containing the end of dot.
@@ -43,25 +43,25 @@ it extracts (sets dot to) the match and runs a command.
 
 `x`(extract) syntax: `x/pattern/command`. For example, `0,$x/Emacs/vi/`: changes
 **Emacs** to **vi** which means "find all occurrences of Emacs in the file, and
-for each one, set the current text to the occur- rence and run the command
-c/vi/, which will replace the current text by vi."
+for each one, set the current text to the occurrence and run the command
+`c/vi/`, which will replace the current text by vi."
 
-The dafault address is dot instead of the whole page (0,$).
+The dafault address is dot instead of the whole page (`0,$`).
 
 A single `u` command undos an `x` command, regardless of how many indivisual
 changes the `x` makes.
 
 The `p` command only prints the selects region. If want display more context,
-use `+-'. For example `0,$x/Emacs/p` vs. `0,$x/Emacs/+-p`.
+use `+-`. For example `0,$x/Emacs/p` vs. `0,$x/Emacs/+-p`.
 
-`,x/Emacs//{TM}/d': for each occurrence of Emacs, fidn the {TM} that follows,
+`,x/Emacs//{TM}/d`: for each occurrence of Emacs, fidn the {TM} that follows,
 and delete it.
 
 Example, turn every newline into two new line:
 - `,x/\n/a/\n/`
 - `,x/\n/c/\n\n/`
-- ',x/$/a/\n/'
-- ',x/^/i/\n/'
+- `,x/$/a/\n/`
+- `,x/^/i/\n/`
 The last example is slightly different, because it puts a newline before each
 line; the other examples place it after. The first two examples manipulate
 newlines directly; the last two use regular expressions: $ is the empty string
@@ -73,9 +73,9 @@ newlines). A better method is to extend every group of newlines by one:
 
 Exampke, indent a block of text by a 4 spaces (the black text in slashes are 4 spaces).
 - `,x/^/a/    /`
-- ',x/^/c/    /'
-- ',x/.*\n/i/    /'
-The last use '.*\n' to match lines: `.*` matches the longest possible string of
+- `,x/^/c/    /`
+- `,x/.*\n/i/    /`
+The last use `.*\n` to match lines: `.*` matches the longest possible string of
 non-newline characters. And delete the indentation is just easy: `,/x^    /d`.
 
 ## Conditionals
@@ -98,8 +98,8 @@ commands on a line to make them easier to read).
 An example presented above, printing all lines in the file containing the word **Emacs**:
 `,x/.*\n/g/Emacs/p`.
 
-To save typing, because .*\n is a common pattern in x commands, if the x is
-followed immediately by a space, the pattern .*\n is assumed. Therefore, the
+To save typing, because `.*\n` is a common pattern in x commands, if the x is
+followed immediately by a space, the pattern `.*\n` is assumed. Therefore, the
 above could be written more succinctly: `,x g/Emacs/p`.
 
 - `,x g/Emacs/p`: is conceptually cleaner but slower
@@ -162,12 +162,12 @@ Example, swap **Emacs** and **vi**
 }
 ```
 or
-,,,
+```
 ,x/[a-zA-Z]+/{
     g/Emacs/ v/....../ c/vi/
     g/vi/ v/.../ c/Emacs/
 }
-,,,
+```
 to make sure we don't change strings embedded in words.
 
 ## Multiple Changes
@@ -182,7 +182,7 @@ they are allapplied simultaneously.
 ## A few other text comands
 
 `m` commands moves the current text to after the text specified by the
-(obligatory) address after the command. `/Emacs/+-m 0' moves the next line
+(obligatory) address after the command. `/Emacs/+-m 0` moves the next line
 containing **Emacs** to the beginning of the file.
 
 `t` copies the text: `/Emacs/+-t0`
@@ -205,7 +205,7 @@ This manual is organized in a rather thoughtless manner.  The first
 ```
 where `&` stands for the text matching the pattern.
 
-'s2/is/was/': a number may be specified after `s` to indicate which occurrence
+`s2/is/was/`: a number may be specified after `s` to indicate which occurrence
 of the pattern to substitude; the default is the first:
 ```
 "TTTT"his manual was organized in a rather thoughtless manner. The first
@@ -222,11 +222,11 @@ Global replacement is achieved by `g`: `s/[a-zA-Z]/x/g`:
 - `-`: each file has a leading `-`
 - '+': `-` becomes `+` if it is has an opening window
 - `.`: identify current file
-- `\``: a leading `\`` means the file is modified
+- `` ` ``: a leading `` ` `` means the file is modified
 
 'X': simliar to `x` but run command in each file whose menu entry (that is,
 whose line printed by an `f` command) matches the pattern. For example, since an
-apostrophe identifiers modified files, X/'/w writes the changed files out to
+apostrophe identifiers modified files, ``X/`/w`` writes the changed files out to
 disc.
 
 Example, find all uses of a particular variable in the C source files:
@@ -242,4 +242,3 @@ X/\.c$/ ,g/variable/ {
 ```
 
 `X D` cleans up for a fresh start.
-
