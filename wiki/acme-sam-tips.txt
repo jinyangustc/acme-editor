@@ -1,0 +1,39 @@
+$-/text/	search for the last occurrence of text in file
++/here/	search for text forwards
+,> wc	push file into wc, count appears in +Errors window
+,>grep /myProject	print lines matching pattern
+,d	delete all lines in file
+,x/ +/ v/^/ c/ /	compress runs of spaces, leaving indentation
+,x/\/myProject/+-p	grep for text, print line for each occurrence
+,x/this/ < echo -n `{date}	replace this with the output of date
+,x/this/|tr a-z A-Z	replace all instances of this with upper case
+,|sort |uniq	sort current file and remove duplicate lines
+-/text/	search for text backwards
+-/{/,-/}/	highlight current brace block
+-0+,+0-	round dot down to whole lines only
+.x/here/ c/there/	search selection here and replace there
+/here/	search for text forwards
+0 < date	insert date at start of file
+0,$	select all lines in file
+1 < date	replace first line with today’s date
+< echo -n `{unicode 0041}	insert utf8 code at current pos
+B < echo *.c	load all C files in current dir into buffers
+B < grep -l her *	load all files containing her to buffers
+X D	remove out all up-to-date files
+X/'/w	write all modified files
+X/.*/,x/
+/d	strip <cr> from all lines
+Y/Edit/D	remove all non Edit files from file list
+d	delete selection
+e file	replace current file by content of external file
+f 	set current file-name to null
+r file	replace selection by external file
+s,//[^\n]*\n,,g	strip C // comments from selection
+s,/\*.*\*/\n,,g	strip C /* */ 1-line comments from selection
+s/"([^"]*)"/‘‘\1’’/	replace "hello" with ‘‘hello’’ in selection
+t "scratch" 0	copy selection to scratch file
+w file	write selected Lineno range to file (default 0,$)
+x/[a-zA-Z0-9]+/ -#0;+#1 | tr a-z A-Z	capitalise every word (slow)
+x/^	/d	remove 1 tab of indent from selection
+x/^/ a/	/	indent selection 1 tab
+| fmt	format selection as a paragraph
