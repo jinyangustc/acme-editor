@@ -3,19 +3,20 @@
 
 # open bib reference file
 type is text
-data matches '\\cite{([a-z]*\-[0-9][0-9][0-9][0-9]\-[a-z]*)}'
+data matches '\\cite{([a-z]*\-?[0-9][0-9][0-9][0-9]\-?[a-z]*)}'
 plumb to edit
-arg isfile /Users/jinyang/onedrive/bibliography/references.bib
-data set /Users/jinyang/onedrive/bibliography/references.bib
+arg isdir .
+arg isfile $dir/manuscript.bib
+data set $dir/manuscript.bib
 attr add addr=/$1
 plumb client $editor
 
 # open the bib pdf, this rule must after the bib reference file rule
 type is text
-data matches '@[a-zA-Z]*{([a-z]*\-[0-9][0-9][0-9][0-9]\-[a-z]*)'
+data matches '@[a-zA-Z]*{([a-z]*\-?[0-9][0-9][0-9][0-9]\-?[a-z]*)'
 plumb to postscript
-arg isdir /Users/jinyang/onedrive/bibliography/bib-pdfs/
-arg isfile /Users/jinyang/onedrive/bibliography/bib-pdfs/$1.pdf
+arg isdir .
+arg isfile $dir/relatedwork/$1.pdf
 plumb start open $file
 
 # open pdf with `open`
