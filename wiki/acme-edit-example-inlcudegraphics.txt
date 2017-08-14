@@ -1,0 +1,29 @@
+How to change from:
+
+	\begin{figure}[!t]
+	\centerline{\includegraphics{./img/pev.pdf}}
+	\caption{Electric Vehicle Charging Pattern}
+	\label{fig3}
+	\end{figure}
+
+To:
+
+	\begin{figure}[!t]
+	\includegraphics[width=0.7\linewidth]{./img/pev.pdf}
+	\caption{Electric Vehicle Charging Pattern}
+	\label{fig3}
+	\end{figure}
+
+Using Edit command in acme:
+
+	Edit ,x/\\centerline{.*$/{
+	  x/\\centerline{/d
+	  x/includegraphics/a/[width=0.7\linewidth]/
+	  x/}}/c/}/
+	}
+
+We first match the whole line starting with \centerline{, then perform the
+following actions in parallel
+1. delete \centerline{
+2. append [width=0.7\linewidth] after \includegraphics
+3. delete the closing } of \centerline{
