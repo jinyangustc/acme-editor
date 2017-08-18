@@ -8,11 +8,11 @@
 #     4. Start acme.
 ##################################################################
 
-# start plumber
+start plumber
 if ! pgrep -x "plumber" > /dev/null
 then
     plumber
-    9pfuse `namespace`/plumb /mnt/plumb
+    # 9pfuse `namespace`/plumb /mnt/plumb
     cat $HOME/git/plan9/lib/plumbing $PLAN9/plumb/initial.plumbing | 9p write plumb/rules > /dev/null
 fi
 
@@ -25,7 +25,12 @@ fi
 # set font used by acme
 ACMEFONT='/mnt/font/Inziu-Iosevka-CL-Regular/14a/font'
 
-SHELL=rc
+# SHELL=rc -l
 
 # start acme
-acme -a -m /mnt/acme -f $ACMEFONT &
+if ! pgrep -x "acme" > /dev/null
+then
+    acme -a -m /mnt/acme -f $ACMEFONT &
+fi
+
+
