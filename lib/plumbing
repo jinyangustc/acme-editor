@@ -30,5 +30,6 @@ plumb start open $file
 # show git log
 type is text
 data matches 'commit ([a-z0-9]*)'
-plumb start bash -c 'cd /tmp/acme.git.log; git show $1 >> /mnt/acme/new/body'
-
+arg isdir .
+data set $dir
+plumb start bash -c 'cd '$dir'; git show '$1' | 9p write acme/new/body'
