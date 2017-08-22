@@ -1,6 +1,15 @@
 # to update:
 # cat $HOME/lib/plumbing $PLAN9/plumb/initial.plumbing | 9p write plumb/rules
 
+# open python error message
+type is text
+data matches '  File "([a-zA-Z0-9_\.]*)", line ([0-9]*), .*'
+plumb to edit
+arg isfile $1
+data set $file
+attr add addr=$2
+plumb client $editor
+
 # open bib reference file
 type is text
 data matches '\\cite{([a-z]*\-?[0-9][0-9][0-9][0-9]\-?[a-z]*)}'
