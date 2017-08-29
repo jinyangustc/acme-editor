@@ -3,7 +3,7 @@
 
 # open python error message
 type is text
-data matches '  File "([a-zA-Z0-9_\.]*)", line ([0-9]*), .*'
+data matches ' *File "([a-zA-Z0-9_\.\/]*)", line ([0-9]*).*'
 plumb to edit
 arg isfile $1
 data set $file
@@ -42,3 +42,31 @@ data matches 'commit ([a-z0-9]*)'
 arg isdir .
 data set $dir
 plumb start bash -c 'cd '$dir'; git show '$1' | 9p write acme/new/body'
+
+# show git log
+type is text
+data matches 'commit ([a-z0-9]*)'
+arg isdir .
+data set $dir
+plumb start bash -c 'cd '$dir'; git show '$1' | 9p write acme/new/body'
+
+# github pull
+type is text
+data matches '.*[pP][uU][lL][lL].*#([0-9]*)'
+arg isdir .
+data set $dir
+plumb start bash -c 'cd '$dir'; open $(git remote get-url origin | sed "s/\.git//")/pull/'$1
+
+# github issue
+type is text
+data matches '[iI][sS][sS][uU][eE] #([0-9]*)'
+arg isdir .
+data set $dir
+plumb start bash -c 'cd '$dir'; open $(git remote get-url origin | sed "s/\.git//")/issues/'$1
+
+# github issue
+type is text
+data matches '.*fix.*#([0-9]*)'
+arg isdir .
+data set $dir
+plumb start bash -c 'cd '$dir'; open $(git remote get-url origin | sed "s/\.git//")/issues/'$1
