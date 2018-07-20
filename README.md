@@ -1,6 +1,6 @@
 # Plan9
 
-I'll add something here to introduce plan9 and acme.
+Stuffs about Plan 9 and Acme Editor I encountered on the Internet.
 
 # Notes and wiki
 
@@ -33,6 +33,9 @@ from entry to ~~give up~~ master :).
 Andersen](http://jlouisramblings.blogspot.sg/2013/04/acme-as-editor_20.html)
 used acme for a long time (months at least) and talked about it in several
 posts.
+
+[Editing remote files with Acme in Inferno
+OS](https://bluishcoder.co.nz/2013/06/11/editing-remote-files-with-acme-in-inferno-os.html).
 
 
 ## Existing Configurations
