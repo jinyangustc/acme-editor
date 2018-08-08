@@ -16,6 +16,8 @@ Stuffs about Plan 9 and Acme Editor I encountered on the Internet.
 
 ## Articles and Manuals
 
+[Topic: Mini review: The Acme editor on Debian on Windows](http://www.donationcoder.com/forum/index.php?topic=45547.0)
+
 [The Acme User Interface for Programmers](http://acme.cat-v.org) lists various
 resources abou the acme editor.
 
