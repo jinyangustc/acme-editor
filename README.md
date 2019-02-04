@@ -45,3 +45,8 @@ OS](https://bluishcoder.co.nz/2013/06/11/editing-remote-files-with-acme-in-infer
 - [Ev Bogdanov's config](https://github.com/evbogdanov/acme)
 - [Michael Auchter's config.](https://github.com/auchter/dotfiles/tree/master/plan9)
 - [Jesper Louis Andersen's config](https://github.com/jlouis/plan9-setup)
+
+## Other interesting ACME implementations
+
+- [A graphical text editor](A graphical text editor). "A is a text editor inspired by the Sam and Acme text editors for the Plan 9 operating system." (Implemented in Go Lang)
+
