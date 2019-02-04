@@ -22,9 +22,9 @@ Stuff about Plan 9 and Acme Editor I found on the Internet.
 
 A nice video introduction given by Russ Cox (rsc): [A Tour ofAcme](https://research.swtch.com/acme).
 
-[Ruben Berenguel](http://www.mostlymaths.net/p/contact.html) posted several blogs about acme.
+[Ruben Berenguel](https://www.mostlymaths.net/2013/03/extensibility-programming-acme-text-editor.html) posted several blogs about acme.
 
-[Brian Zwahr](http://www.mostlymaths.net/p/contact.html) shared his joys and pains during a 3-month experiment with acme in a series of blogs (9 episodes), from entry to ~~give up~~ master :).
+[Brian Zwahr](http://echosa.github.io/blog/2014/06/18/lets-try-acme-ep-1-hello/) shared his joys and pains during a 3-month experiment with acme in a series of blogs (9 episodes), from entry to ~~give up~~ master :).
 
 [Jesper Louis Andersen](http://jlouisramblings.blogspot.sg/2013/04/acme-as-editor_20.html) used acme for a long time (months at least) and talked about it in several posts.
 
