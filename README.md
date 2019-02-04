@@ -39,5 +39,5 @@ A nice video introduction given by Russ Cox (rsc): [A Tour ofAcme](https://resea
 
 ## Other interesting ACME implementations
 
-- [A graphical text editor](A graphical text editor). "A is a text editor inspired by the Sam and Acme text editors for the Plan 9 operating system." (Implemented in Go Lang)
+- [A graphical text editor](https://github.com/as/a). "A is a text editor inspired by the Sam and Acme text editors for the Plan 9 operating system." (Implemented in Go Lang)
 
