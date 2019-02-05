@@ -6,6 +6,7 @@ Stuff about Plan 9 and Acme Editor I found on the Internet.
 
 - Installation: [wiki/install.md](/wiki/install.md)
 - sam editor/language: [wiki/sam.md](/wiki/sam.md)
+- sam and acme start script [utilities / scripts / programs for acme, the programmes text editor](https://github.com/karahobny/acme-utils)
 
 # Reference
 
@@ -32,7 +33,7 @@ Stuff about Plan 9 and Acme Editor I found on the Internet.
 - [The Acme editor on Debian on Windows](http://www.donationcoder.com/forum/index.php?topic=45547.0)
 
 
-## Existing Configurations
+## Other People's Configurations
 
 - [Ev Bogdanov's config](https://github.com/evbogdanov/acme)
 - [Michael Auchter's config.](https://github.com/auchter/dotfiles/tree/master/plan9)
