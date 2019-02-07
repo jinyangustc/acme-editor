@@ -1,26 +1,40 @@
 #!/usr/bin/env sh
 
-if ! pgrep -x "plumber" > /dev/null
-then
-    plumber
-    # 9pfuse `namespace`/plumb /mnt/plumb
-    cat $HOME/git/plan9/lib/plumbing $PLAN9/plumb/initial.plumbing | 9p write plumb/rules > /dev/null
-fi
+ACMEFONT='/mnt/font/TriplicateT4p/14a/font'
 
-if ! pgrep -x "fontsrv" > /dev/null
-then
-    fontsrv&
-fi
-ACMEFONT='/mnt/font/Inziu-Iosevka-CL-Regular/14a/font'
-
-export PAGER=cat
-export MANPAGER=cat
-# export SHELL=rc -l
+export PAGER=nobs
+export MANPAGER=nobs
 export prompt='$ '
 export EDITOR=E
+export PLUMBFILE=$HOME/git/plan9/lib/plumbing
+export SHELL=/usr/local/bin/bash
+export acmeshell=/usr/local/bin/bash
+export TERM=dumb
+export MANPAGER=nobs
+export PAGER=nobs
+export PLAN9=/usr/local/plan9
+export PATH=$PATH:$PLAN9/bin
+export MANPATH=$MANPATH:$PLAN9/man
 
-if ! pgrep -x "acme" > /dev/null
-then
-    acme -a -m /mnt/acme -f $ACMEFONT &
+# if ! pgrep -x "plumber" > /dev/null
+# then
+#     plumber
+#     # 9pfuse `namespace`/plumb /mnt/plumb
+#     cat $HOME/git/plan9/lib/plumbing $PLAN9/plumb/initial.plumbing | 9p write plumb/rules > /dev/null
+# fi
+#
+# if ! pgrep -x "fontsrv" > /dev/null
+# then
+#     fontsrv&
+# fi
+
+[ -z "$(pgrep fontsrv)" ] && fontsrv;
+[ -z "$(pgrep plumber)" ] && plumber;
+
+if [ -f "$PLUMBFILE" ]; then
+	cat "$PLUMBFILE" | 9p write plumb/rules
+else
+	cat $PLAN9/plumb/basic | 9p write plumb/rules
 fi
 
+[ -z "$(pgrep acme)" ] && acme -a -m /mnt/acme -f $ACMEFONT &
