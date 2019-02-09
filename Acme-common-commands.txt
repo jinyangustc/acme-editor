@@ -1,4 +1,8 @@
 Edit
-====
+==========
 ,s/[	 ]+$//g						// remove trailing tabs and spaces:
 ,d								// clear window content
+
+Git
+==========
+[(git status) (git add) (git diff) (git commit) (git log) (git show)]
