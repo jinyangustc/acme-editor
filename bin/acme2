@@ -11,15 +11,15 @@ export TERM=dumb
 export MANPAGER=nobs
 export PAGER=nobs
 
-export PLUMBFILE=$HOME/git/amce-editor/lib/plumbing
+export PLUMBFILE=$HOME/git/acme-editor/lib/plumbing
 export SHELL=/usr/local/bin/bash
 export acmeshell=/usr/local/bin/bash
 export PLAN9=/usr/local/plan9
 export PATH=$PATH:$PLAN9/bin
 export MANPATH=$MANPATH:$PLAN9/man
 
-[ -z "$(pgrep fontsrv)" ] && fontsrv&
-[ -z "$(pgrep plumber)" ] && plumber&
+# [ -z "$(pgrep fontsrv)" ] && fontsrv&
+[ -z "$(pgrep plumber)" ] && plumber;
 
 if [ -f "$PLUMBFILE" ]; then
 	cat "$PLUMBFILE" | 9p write plumb/rules
@@ -27,5 +27,5 @@ else
 	cat $PLAN9/plumb/basic | 9p write plumb/rules
 fi
 
-[ -z "$(pgrep acme)" ] && acme -a -m /tmp/acme -f "$VARIABLE_PITCH_FONT" -F "$FIXED_PITCH_FONT" &
+[ -z "$(pgrep acme)" ] && acme -a -m /mnt/acme -f "$VARIABLE_PITCH_FONT" -F "$FIXED_PITCH_FONT" &
 
