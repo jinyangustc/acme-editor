@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
 ACMEFONT='/mnt/font/TriplicateT4p/14a/font'
+# ACMEFONT='/mnt/font/LucidaGrande/16a/font'
 
 export PAGER=nobs
 export MANPAGER=nobs
@@ -28,8 +29,8 @@ export MANPATH=$MANPATH:$PLAN9/man
 #     fontsrv&
 # fi
 
-[ -z "$(pgrep fontsrv)" ] && fontsrv;
-[ -z "$(pgrep plumber)" ] && plumber;
+[ -z "$(pgrep fontsrv)" ] && fontsrv&
+[ -z "$(pgrep plumber)" ] && plumber&
 
 if [ -f "$PLUMBFILE" ]; then
 	cat "$PLUMBFILE" | 9p write plumb/rules

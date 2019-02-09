@@ -1,5 +1,5 @@
 # to update:
-# cat $HOME/git/plan9/lib/plumbing $PLAN9/plumb/initial.plumbing | 9p write plumb/rules
+# cat $HOME/git/acme-editor/lib/plumbing $PLAN9/plumb/initial.plumbing | 9p write plumb/rules
 
 # open python error message
 type is text
