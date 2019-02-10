@@ -1,7 +1,7 @@
 # uses this: Rob Pike
 
-[UsesThis: Rob Pike ](https://usesthis.com/interviews/rob.pike/)
-[HN discussion](https://news.ycombinator.com/item?id=4691680)
+- [UsesThis: Rob Pike ](https://usesthis.com/interviews/rob.pike/)
+- [HN discussion](https://news.ycombinator.com/item?id=4691680)
 
 > rsc on Oct 24, 2012 [-]
 >
@@ -9,5 +9,5 @@
 
 # uses this: Russ Cox
 
-[uses this: Russ Cox](http://usesthis.com/interviews/russ.cox/  http://www.google.com)
-[HN discussion](https://news.ycombinator.com/item?id=2428122)
+- [uses this: Russ Cox](http://usesthis.com/interviews/russ.cox/)
+- [HN discussion](https://news.ycombinator.com/item?id=2428122)
