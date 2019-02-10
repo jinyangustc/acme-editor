@@ -2,10 +2,14 @@
 
 Files in this repo:
 
-- [Installation](/wiki/install.md)
-- [sam editor/language](/wiki/sam.md)
-- [utilities / scripts / programs for acme, the programmes text editor](https://github.com/karahobny/acme-utils)
+- [Installation](/install.md)
+- [sam editor/language](/sam.md)
+- [An editing example using sam lang](/acme-edit-example-inlcudegraphics.txt)
 - [Gossips about acme, settings and its creators](/gossips.md)
+- [Remote editing with sshfs and acme](/remote-editing.md)
+- [Some tips on sam](/acme-sam-tips.txt)
+- [Some other notes.](/tips.txt)
+
 
 Wiki
 
@@ -27,6 +31,7 @@ Configurations
 - [Ev Bogdanov's config](https://github.com/evbogdanov/acme)
 - [Michael Auchter's config.](https://github.com/auchter/dotfiles/tree/master/plan9)
 - [Jesper Louis Andersen's config](https://github.com/jlouis/plan9-setup)
+- [utilities / scripts / programs for acme, the programmes text editor](https://github.com/karahobny/acme-utils)
 
 Other acme implementations
 
