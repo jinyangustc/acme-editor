@@ -1,8 +1,8 @@
 Edit
 ==========
-,s/[	 ]+$//g						// remove trailing tabs and spaces
-,d								// clear window content
-s/^	*//g							// remove leading tabs
+,s/[	 ]+$//g		remove trailing tabs and spaces
+,d				clear window content
+s/^	*//g			remove leading tabs
 
 Git
 ==========
