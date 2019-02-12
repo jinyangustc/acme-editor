@@ -3,7 +3,6 @@
 # 9 unmount /mnt/plumb
 # 9 unmount /mnt/acme
 # 9 unmount /mnt/fontsrv
-
 # if pgrep -x "plumber" > /dev/null
 # then
 #     pkill plumber
@@ -19,9 +18,9 @@ then
     unmount /mnt/fontsrv
 fi
 
-if mount | grep /mnt/acme > /dev/null
+if mount | grep /tmp/acme > /dev/null
 then
-    unmount /mnt/acme
+    unmount /tmp/acme
 fi
 
 if mount | grep /mnt/plumb > /dev/null
