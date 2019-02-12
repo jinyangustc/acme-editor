@@ -3,7 +3,21 @@ Edit
 ,s/[	 ]+$//g		remove trailing tabs and spaces
 ,d				clear window content
 s/^	*//g			remove leading tabs
+.+#0/old/c/new/	That will search for old, replace it
+				with new, and scroll the file to highlight
+				and show the replacement.  If you
+				don't like that change, you middle
+				click Undo.
 
 Git
 ==========
 [(git status) (git add) (git diff) (git commit) (git log) (git show)]
+
+
+Spell
+==========
+aspell --lang=en --mode=tex check file.tex
+
+
+|fmt -72		Format the text to 72 column width
+unicode -n	Display the unicode id of a glyph at cursor

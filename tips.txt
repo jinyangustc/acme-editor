@@ -3,3 +3,5 @@ https://groups.google.com/forum/#!searchin/comp.os.plan9/get$20line$20number%7Cs
 To show the position of the dot: Edit =
 
 Call command with argument: select the text to be used as arg, then 2-1 click on the command.
+
+Open new directories in the same window:  just type the whole path to the directory you want with the help of ^F
