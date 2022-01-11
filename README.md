@@ -17,7 +17,7 @@ Wiki
 
 Articles about acme:
 
-- [Russ Cox solving Advent of Code 2021 Day 14 using the Acme text editor](https://youtu.be/B5l2g3-jQnY)
+- [Russ Cox solving Advent of Code 2021 Day 2 using the Acme text editor](https://youtu.be/B5l2g3-jQnY)
 - [A Tour of Acme by Russ Cox (rsc)](https://research.swtch.com/acme).
 - [Topic: Mini review: The Acme editor on Debian on Windows](http://www.donationcoder.com/forum/index.php?topic=45547.0)
 - [The Acme User Interface for Programmers](http://acme.cat-v.org) lists various resources abou the acme editor.
