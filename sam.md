@@ -65,13 +65,14 @@ Example, turn every newline into two new line:
 The last example is slightly different, because it puts a newline before each
 line; the other examples place it after. The first two examples manipulate
 newlines directly; the last two use regular expressions: $ is the empty string
-at the end of a line, while ˆ is the empty string at the beginning.These
+at the end of a line, while ˆ is the empty string at the beginning.
+These
 solutions all have a possible drawback: if there is already a blank line (that
 is, two consecutive newlines), they make it much larger (four consecutive
 newlines). A better method is to extend every group of newlines by one:
 `,x/\n+/a/\n/` which the regex operator `+` means "one or more".
 
-Exampke, indent a block of text by a 4 spaces (the black text in slashes are 4 spaces).
+Example, indent a block of text by a 4 spaces (the black text in slashes are 4 spaces).
 - `,x/^/a/    /`
 - `,x/^/c/    /`
 - `,x/.*\n/i/    /`
