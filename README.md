@@ -28,6 +28,7 @@ Articles about acme:
 
 Configurations
 
+- LSP in Acme: [fhs/acme-lsp](https://github.com/fhs/acme-lsp)
 - [Ev Bogdanov's config](https://github.com/evbogdanov/acme)
 - [Michael Auchter's config.](https://github.com/auchter/dotfiles/tree/master/plan9)
 - [Jesper Louis Andersen's config](https://github.com/jlouis/plan9-setup)
