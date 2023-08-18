@@ -38,3 +38,6 @@ Other acme implementations
 
 - [A graphical text editor](https://github.com/as/a). "A is a text editor inspired by the Sam and Acme text editors for the Plan 9 operating system." (Implemented in Go Lang)
 
+The idea lives on:
+
+- [An acme style editing plugin for the micro editor](https://github.com/xxuejie/micro-acme.git)
