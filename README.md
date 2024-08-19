@@ -10,7 +10,6 @@ Files in this repo:
 - [Some tips on sam](/acme-sam-tips.txt)
 - [Some other notes.](/tips.txt)
 
-
 Wiki
 
 - [9p wiki](https://9p.io/wiki/plan9/community/index.html)
@@ -41,3 +40,4 @@ Other acme implementations
 The idea lives on:
 
 - [An acme style editing plugin for the micro editor](https://github.com/xxuejie/micro-acme.git)
+- [Anvil Editor](https://anvil-editor.net). "Anvil is a graphical, multi-pane tiling editor that makes bold use of the mouse and integrates closely with the shell. It supports syntax highlighting, multiple cursors and selections, remote file editing, and contains a powerful text manipulation language. Anvil is inspired by Acme."
