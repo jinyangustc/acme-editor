@@ -1,20 +1,22 @@
 #!/usr/bin/env sh
 
-VARIABLE_PITCH_FONT='/mnt/font/LucidaGrande/16a/font'
-FIXED_PITCH_FONT='/mnt/font/TriplicateT4p/14a/font'
+[ -z "$(pgrep fontsrv)" ] && fontsrv -m /tmp/font &
 
-export PAGER=nobs
-export MANPAGER=nobs
-export prompt='$ '
-export EDITOR=E
-export TERM=dumb
-export MANPAGER=nobs
-export PAGER=nobs
+VARIABLE_PITCH_FONT='/tmp/font/LucidaGrande/16a/font'
+FIXED_PITCH_FONT='/tmp/font/BerkeleyMono-Regular/16a/font'
+
+# export PAGER=nobs
+# export MANPAGER=nobs
+# export prompt='$ '
+# export EDITOR=E
+# export TERM=dumb
+# export MANPAGER=nobs
+# export PAGER=nobs
 
 export PLUMBFILE=$HOME/git/acme-editor/lib/plumbing
-export SHELL=/usr/local/bin/bash
-export acmeshell=/usr/local/bin/bash
-export PLAN9=/usr/local/plan9
+export SHELL=/bin/bash
+export acmeshell=/bin/bash
+export PLAN9=$HOME/git/plan9port/
 export PATH=$PATH:$PLAN9/bin
 export MANPATH=$MANPATH:$PLAN9/man
 
@@ -23,5 +25,5 @@ export MANPATH=$MANPATH:$PLAN9/man
 
 cat $PLUMBFILE $PLAN9/plumb/initial.plumbing | 9p write plumb/rules
 
-[ -z "$(pgrep acme)" ] && acme -a -m /tmp/acme -f "$VARIABLE_PITCH_FONT" -F "$FIXED_PITCH_FONT" &
-
+# [ -z "$(pgrep acme)" ] && acme -a -m /tmp/acme -f "$VARIABLE_PITCH_FONT" -F "$FIXED_PITCH_FONT" &
+[ -z "$(pgrep acme)" ] && acme -a -m /tmp/acme -f "$FIXED_PITCH_FONT" &
