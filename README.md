@@ -2,13 +2,13 @@
 
 Files in this repo:
 
-- [Installation](/install.md)
-- [sam editor/language](/sam.md)
-- [An editing example using sam lang](/acme-edit-example-inlcudegraphics.txt)
-- [Gossips about acme, settings and its creators](/gossips.md)
-- [Remote editing with sshfs and acme](/remote-editing.md)
-- [Some tips on sam](/acme-sam-tips.txt)
-- [Some other notes.](/tips.txt)
+- [Installation](install.md)
+- [sam editor/language](sam.md)
+- [An editing example using sam lang](acme-edit-example-inlcudegraphics.txt)
+- [Gossips about acme, settings and its creators](gossips.md)
+- [Remote editing with sshfs and acme](remote-editing.md)
+- [Some tips on sam](acme-sam-tips.txt)
+- [Some other notes.](tips.txt)
 
 Wiki
 
@@ -41,3 +41,6 @@ The idea lives on:
 
 - [An acme style editing plugin for the micro editor](https://github.com/xxuejie/micro-acme.git)
 - [Anvil Editor](https://anvil-editor.net). "Anvil is a graphical, multi-pane tiling editor that makes bold use of the mouse and integrates closely with the shell. It supports syntax highlighting, multiple cursors and selections, remote file editing, and contains a powerful text manipulation language. Anvil is inspired by Acme."
+- [ad :: an adaptable text editor](https://github.com/sminez/ad?tab=readme-ov-file)
+  - "ad (pronounced A.D.) is an attempt at combining a modal editing interface of likes of vi and kakoune with the approach to extensibility of Plan9's Acme. Inside of ad text is something you can execute as well as edit."
+  - Written in Rust and available on [crates.io](https://crates.io/crates/ad-editor)

@@ -1,4 +1,4 @@
-# uses this: Rob Pike
+## uses this: Rob Pike
 
 - [UsesThis: Rob Pike ](https://usesthis.com/interviews/rob.pike/)
 - [HN discussion](https://news.ycombinator.com/item?id=4691680)
@@ -7,7 +7,7 @@
 >
 > For acme chording, Rob carries around a tiny external 3-button mouse that he likes. I use the keyboard modifiers. Both approaches work fine.
 
-# uses this: Russ Cox
+## uses this: Russ Cox
 
 - [uses this: Russ Cox](http://usesthis.com/interviews/russ.cox/)
 - [HN discussion](https://news.ycombinator.com/item?id=2428122)
