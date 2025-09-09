@@ -44,3 +44,7 @@ The idea lives on:
 - [ad :: an adaptable text editor](https://github.com/sminez/ad?tab=readme-ov-file)
   - "ad (pronounced A.D.) is an attempt at combining a modal editing interface of likes of vi and kakoune with the approach to extensibility of Plan9's Acme. Inside of ad text is something you can execute as well as edit."
   - Written in Rust and available on [crates.io](https://crates.io/crates/ad-editor)
+
+Humor:
+![Vim vs ACME](/images/vim-vs-acme.png)
+(Source: [r/plan9: Vim vs ACME](https://www.reddit.com/r/plan9/s/fJgg75folb))
