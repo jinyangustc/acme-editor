@@ -46,5 +46,7 @@ The idea lives on:
   - Written in Rust and available on [crates.io](https://crates.io/crates/ad-editor)
 
 Humor:
+
 ![Vim vs ACME](/images/vim-vs-acme.png)
+
 (Source: [r/plan9: Vim vs ACME](https://www.reddit.com/r/plan9/s/fJgg75folb))
