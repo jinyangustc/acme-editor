@@ -3,12 +3,17 @@
 Files in this repo:
 
 - [Installation](install.md)
-- [sam editor/language](sam.md)
-- [An editing example using sam lang](acme-edit-example-inlcudegraphics.txt)
 - [Gossips about acme, settings and its creators](gossips.md)
 - [Remote editing with sshfs and acme](remote-editing.md)
-- [Some tips on sam](acme-sam-tips.txt)
 - [Some other notes.](tips.txt)
+
+Sam
+
+- [An editing example using sam lang](acme-edit-example-inlcudegraphics.txt)
+- [sam editor/language](sam.md)
+- [Some tips on sam](acme-sam-tips.txt)
+- [Plan9/Sam (by Igor Böhm)](https://9lab.org/plan9/sam/)
+- [Sam quick reference card](http://sam.cat-v.org/cheatsheet/sam-refcard.pdf)
 
 Wiki
 
@@ -19,10 +24,16 @@ Articles about acme:
 - [Russ Cox solving Advent of Code 2021 Day 2 using the Acme text editor](https://youtu.be/B5l2g3-jQnY)
 - [A Tour of Acme by Russ Cox (rsc)](https://research.swtch.com/acme).
 - [Topic: Mini review: The Acme editor on Debian on Windows](http://www.donationcoder.com/forum/index.php?topic=45547.0)
-- [The Acme User Interface for Programmers](http://acme.cat-v.org) lists various resources about the acme editor.
-- [Ruben Berenguel](https://www.mostlymaths.net/2013/03/extensibility-programming-acme-text-editor.html) posted several blogs about acme.
-- [Brian Zwahr](http://echosa.github.io/blog/2014/06/18/lets-try-acme-ep-1-hello/) shared his joys and pains during a 3-month experiment with acme in a series of blogs (9 episodes), from entry to ~~giving up~~ master :).
-- [Jesper Louis Andersen](http://jlouisramblings.blogspot.sg/2013/04/acme-as-editor_20.html) used acme for a long time (months at least) and talked about it in several posts.
+- [The Acme User Interface for Programmers](http://acme.cat-v.org)
+  lists various resources about the acme editor.
+- [Ruben Berenguel](https://www.mostlymaths.net/2013/03/extensibility-programming-acme-text-editor.html)
+  posted several blogs about acme.
+- [Brian Zwahr](http://echosa.github.io/blog/2014/06/18/lets-try-acme-ep-1-hello/)
+  shared his joys and pains during a 3-month experiment with acme in a series
+  of blogs (9 episodes), from entry to ~~giving up~~ master :).
+- [Jesper Louis Andersen](http://jlouisramblings.blogspot.sg/2013/04/acme-as-editor_20.html)
+  used acme for a long time (months at least) and talked about it in several
+  posts.
 - [Editing remote files with Acme in Inferno OS](https://bluishcoder.co.nz/2013/06/11/editing-remote-files-with-acme-in-inferno-os.html).
 
 Configurations
@@ -35,14 +46,22 @@ Configurations
 
 Other acme implementations
 
-- [A graphical text editor](https://github.com/as/a). "A is a text editor inspired by the Sam and Acme text editors for the Plan 9 operating system." (Implemented in Go Lang)
+- [A graphical text editor](https://github.com/as/a).
+  "A is a text editor inspired by the Sam and Acme text editors for the Plan 9
+  operating system." (Implemented in Go Lang)
 
 The idea lives on:
 
 - [An acme style editing plugin for the micro editor](https://github.com/xxuejie/micro-acme.git)
-- [Anvil Editor](https://anvil-editor.net). "Anvil is a graphical, multi-pane tiling editor that makes bold use of the mouse and integrates closely with the shell. It supports syntax highlighting, multiple cursors and selections, remote file editing, and contains a powerful text manipulation language. Anvil is inspired by Acme."
+- [Anvil Editor](https://anvil-editor.net). "Anvil is a graphical, multi-pane
+  tiling editor that makes bold use of the mouse and integrates closely with the
+  shell. It supports syntax highlighting, multiple cursors and selections, remote
+  file editing, and contains a powerful text manipulation language. Anvil is
+  inspired by Acme."
 - [ad :: an adaptable text editor](https://github.com/sminez/ad?tab=readme-ov-file)
-  - "ad (pronounced A.D.) is an attempt at combining a modal editing interface of likes of vi and kakoune with the approach to extensibility of Plan9's Acme. Inside of ad text is something you can execute as well as edit."
+  - "ad (pronounced A.D.) is an attempt at combining a modal editing interface
+    of likes of vi and kakoune with the approach to extensibility of Plan9's
+    Acme. Inside of ad text is something you can execute as well as edit."
   - Written in Rust and available on [crates.io](https://crates.io/crates/ad-editor)
 
 Humor:
