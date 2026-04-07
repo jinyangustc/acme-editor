@@ -35,6 +35,7 @@ Articles about acme:
   used acme for a long time (months at least) and talked about it in several
   posts.
 - [Editing remote files with Acme in Inferno OS](https://bluishcoder.co.nz/2013/06/11/editing-remote-files-with-acme-in-inferno-os.html).
+- [How I Started Using Acme (by Peter Mikkelsen)](https://pmikkelsen.com/me/how-i-started-using-acme)
 
 Configurations
 
